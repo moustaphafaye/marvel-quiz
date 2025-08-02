@@ -53,6 +53,7 @@ class Quiz extends Component {
   }
 
   render() {
+    
     const { pseudo } = this.props.userData;
     const displayOptions = this.state.options.map((option, index) => {
       return (
