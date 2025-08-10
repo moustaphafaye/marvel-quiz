@@ -6,19 +6,19 @@ import { useNavigate } from 'react-router-dom';
 const Logout = () => {
 
     const [checked, setChecked] = useState(false);
-    console.log( checked);
+    // console.log( checked);
 
     const navigate = useNavigate();
     
     useEffect(() => {
         if (checked) {
             signOut(auth).then(() => {
-                console.log('Vous êtes déconnecté');
+                // console.log('Vous êtes déconnecté');
                 setTimeout(() => {
                     navigate('/');
                 }, 1000);
             }).catch((error) => {
-                console.error('Oups , nous avons une erreur', error);
+                // console.error('Oups , nous avons une erreur', error);
             });
         }
     }, [checked]);

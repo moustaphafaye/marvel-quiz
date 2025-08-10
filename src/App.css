@@ -142,6 +142,10 @@ main {
   justify-content: flex-end;
 }
 
+.toastError{
+  background-color: #d31017!important;
+}
+
 .rightBox {
   display: flex;
   flex: 0 1 35%;
